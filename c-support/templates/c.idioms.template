@@ -1,3 +1,11 @@
+== Idioms.function-declaration == map:ifd, shortcut:d  ==
+/* 
+ * ===  FUNCTION  ======================================================================
+ *         Name:  |?FUNCTION_NAME|
+ *  Description:  <CURSOR>
+ * =====================================================================================
+ */
+<+return_type+> |FUNCTION_NAME| ( <+argument_list+> ) ;
 == Idioms.function == map:if, shortcut:f  ==
 /* 
  * ===  FUNCTION  ======================================================================
