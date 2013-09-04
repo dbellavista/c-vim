@@ -6,6 +6,8 @@
 "                  comments, idioms, code snippets, templates and comments.
 "                  Compile, link and run one-file-programs without a makefile.
 "                  See also help file csupport.txt .
+"                  This file has been modified by Daniele Bellavista.
+"                  Modification are marked with tag DB_EDIT
 "
 "   GVIM Version:  7.0+
 "
@@ -2455,7 +2457,9 @@ function! C_InsertTemplateWrapper ()
 		if index( s:C_SourceCodeExtensionsList, expand('%:e') ) >= 0 
  			call mmtemplates#core#InsertTemplate(g:C_Templates, 'Comments.file description impl')
 		else
- 			call mmtemplates#core#InsertTemplate(g:C_Templates, 'Comments.file description-header')
+      " DB_EDIT 09/04/2013: Fixed the wrong identifier for header file
+      " description comment
+ 			call mmtemplates#core#InsertTemplate(g:C_Templates, 'Comments.file description header')
 		endif
 		set modified
 	endif
