@@ -42,6 +42,11 @@
 == Preprocessor.include-local == map:pl, shortcut:l, insert ==
 #include "<CURSOR>"
 §-------------------------------------------------------------------------
+== Preprocessor.include-header == map:ph, shortcut:h, insert ==
+<+includes+>#include "|BASENAME|.h"
+
+<+c_body+>
+§-------------------------------------------------------------------------
 == Preprocessor.define == map:pd, shortcut:d, insert ==
 #define	<CURSOR>			/*  */
 §-------------------------------------------------------------------------
