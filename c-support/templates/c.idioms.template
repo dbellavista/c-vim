@@ -2,10 +2,10 @@
 /* 
  * ===  FUNCTION  ======================================================================
  *         Name:  |?FUNCTION_NAME|
- *  Description:  
+ *  Description:  <CURSOR>
  * =====================================================================================
  */
-void<CURSOR> |FUNCTION_NAME| ( <+argument_list+> )
+<+return_type+> |FUNCTION_NAME| ( <+argument_list+> )
 {
 <SPLIT>	return <+return_value+>;
 }		/* -----  end of function |FUNCTION_NAME|  ----- */
@@ -13,10 +13,10 @@ void<CURSOR> |FUNCTION_NAME| ( <+argument_list+> )
 /* 
  * ===  FUNCTION  ======================================================================
  *         Name:  |?FUNCTION_NAME|
- *  Description:  
+ *  Description:  <CURSOR>
  * =====================================================================================
  */
-static void<CURSOR> |FUNCTION_NAME| ( <+argument_list+> )
+static <+return_type+> |FUNCTION_NAME| ( <+argument_list+> )
 {
 <SPLIT>	return <+return_value+>;
 }		/* -----  end of static function |FUNCTION_NAME|  ----- */
