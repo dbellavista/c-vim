@@ -27,8 +27,7 @@ if ( <CURSOR> )
 == Statements.if block else == map:sife, shortcut:l  ==
 if ( <CURSOR> ) {
 <SPLIT><-IF_PART->
-}
-else {
+} else {
 <-ELSE_PART->
 }
 == Statements.else block == map:se, shortcut:e  ==
