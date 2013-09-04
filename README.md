@@ -7,7 +7,7 @@ This is a "fork" from the c-vim plugin found in:
 
 Version 6.0, 2012-08-20
 
-I added some modification basing on my abits. The source code is distributed
+I've added some modification to improve my productivity. The source code is distributed
 under GPL2 http://www.gnu.org/licenses/gpl-2.0.html
 
 Official mailing list: http://lug.fh-swf.de/cgi-bin/mailman/listinfo/vim-plugins-list
