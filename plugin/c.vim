@@ -2455,8 +2455,14 @@ function! C_InsertTemplateWrapper ()
 	call C_CheckAndRereadTemplates()
 	if isdirectory(expand('%:p:h'))
 		if index( s:C_SourceCodeExtensionsList, expand('%:e') ) >= 0 
+      " DB_EDIT 09/04/2013: include of the omonimous header inserted by
+      " default in new source files.
+ 			call mmtemplates#core#InsertTemplate(g:C_Templates, 'Preprocessor.include-header')
  			call mmtemplates#core#InsertTemplate(g:C_Templates, 'Comments.file description impl')
 		else
+      " DB_EDIT 09/04/2013: ifndef guard inserted by default in new header
+      " files.
+ 			call mmtemplates#core#InsertTemplate(g:C_Templates, 'Preprocessor.guard-ifndef')
       " DB_EDIT 09/04/2013: Fixed the wrong identifier for header file
       " description comment
  			call mmtemplates#core#InsertTemplate(g:C_Templates, 'Comments.file description header')
