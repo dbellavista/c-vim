@@ -74,11 +74,14 @@
 <+ELSE PART+>
 #endif     /* -----  not |CONDITION|  ----- */
 §-------------------------------------------------------------------------
-== Preprocessor.ifndef-def-endif == map:pind, shortcut:e ==
-#ifndef  |?BASENAME:L|_INC
-#define  |BASENAME|_INC
-<CURSOR><SPLIT>
-#endif   /* ----- #ifndef |BASENAME|_INC  ----- */
+== Preprocessor.guard-ifndef == map:pind, shortcut:e ==
+#ifndef  __|?BASENAME:u|_INC__
+#define  __|BASENAME:u|_INC__
+
+<+header_body+>
+<SPLIT>
+
+#endif   /* ----- #ifndef __|BASENAME:u|_INC__  ----- */
 §-------------------------------------------------------------------------
 == Preprocessor.error == map:pe, shortcut:o ==
 #error	"<CURSOR>"			/*  */
