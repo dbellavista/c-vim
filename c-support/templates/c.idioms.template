@@ -5,8 +5,7 @@
  *  Description:  
  * =====================================================================================
  */
-void<CURSOR>
-|FUNCTION_NAME| ( <+argument_list+> )
+void<CURSOR> |FUNCTION_NAME| ( <+argument_list+> )
 {
 <SPLIT>	return <+return_value+>;
 }		/* -----  end of function |FUNCTION_NAME|  ----- */
@@ -17,8 +16,7 @@ void<CURSOR>
  *  Description:  
  * =====================================================================================
  */
-static void<CURSOR>
-|FUNCTION_NAME| ( <+argument_list+> )
+static void<CURSOR> |FUNCTION_NAME| ( <+argument_list+> )
 {
 <SPLIT>	return <+return_value+>;
 }		/* -----  end of static function |FUNCTION_NAME|  ----- */
@@ -31,9 +29,9 @@ static void<CURSOR>
  *  Description:  
  * =====================================================================================
  */
-int
-main ( int argc, char *argv[] )
-{<CURSOR>
+int main ( int argc, char *argv[] )
+{
+<CURSOR>
 <SPLIT>	return EXIT_SUCCESS;
 }				/* ----------  end of function main  ---------- */
 == Idioms.enum == map:ie, shortcut:e  ==
