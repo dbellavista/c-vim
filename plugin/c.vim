@@ -174,6 +174,8 @@ let s:C_FormatYear						= '%Y'
 let s:C_SourceCodeExtensions  = 'c cc cp cxx cpp CPP c++ C i ii'
 let g:C_MapLeader							= '\'
 let s:C_CppcheckSeverity			= 'all'
+" DB_EDIT 09/05/2013 Indent arguments
+let s:C_IndentArguments			  = ''
 "
 "------------------------------------------------------------------------------
 "
@@ -220,6 +222,7 @@ call C_CheckGlobal('C_SourceCodeExtensions ')
 call C_CheckGlobal('C_TypeOfH              ')
 call C_CheckGlobal('C_VimCompilerName      ')
 call C_CheckGlobal('C_XtermDefaults        ')
+call C_CheckGlobal('C_IndentArguments      ')
 
 if exists('g:C_GlobalTemplateFile') && !empty(g:C_GlobalTemplateFile)
 	let s:C_GlobalTemplateDir	= fnamemodify( s:C_GlobalTemplateFile, ":h" )
@@ -1950,10 +1953,11 @@ function! C_Indent ( )
 	:update
 
 	exe	":cclose"
+  " DB_EDIT 09/05/2013 Added arguments to indent command
 	if s:MSWIN
-		silent exe ":%!indent "
+		silent exe ":%!indent " . s:C_IndentArguments
 	else
-		silent exe ":%!indent 2> ".s:C_IndentErrorLog
+		silent exe ":%!indent " . s:C_IndentArguments . " 2> ".s:C_IndentErrorLog
 		redraw!
 		call s:C_SaveGlobalOption('errorformat')
 		if getfsize( s:C_IndentErrorLog ) > 0
