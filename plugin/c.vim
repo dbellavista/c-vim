@@ -1953,6 +1953,8 @@ function! C_Indent ( )
 	:update
 
 	exe	":cclose"
+  " DB_EDIT 09/05/2013 Save the cursor before indenting
+	let l:saved_cursor = getpos(".")
   " DB_EDIT 09/05/2013 Added arguments to indent command
 	if s:MSWIN
 		silent exe ":%!indent " . s:C_IndentArguments
@@ -1973,6 +1975,8 @@ function! C_Indent ( )
 		endif
 		call s:C_RestoreGlobalOption('errorformat')
 	endif
+  " DB_EDIT 09/05/2013 restore the saved cursor
+	call setpos(".", l:saved_cursor)
 
 endfunction    " ----------  end of function C_Indent ----------
 "
