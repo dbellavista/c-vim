@@ -72,7 +72,7 @@ free (|POINTER|);
 |POINTER|	= NULL;
 
 == Idioms.malloc == map:ima, shortcut:m  ==
-|?POINTER|	= malloc ( sizeof(<CURSOR><+TYPE+>) );
+<CURSOR>|?POINTER| = (<+cast+>) malloc ( sizeof(<+TYPE+>) <+count+>);
 if ( |POINTER|==NULL ) {
 	fprintf ( stderr, "\ndynamic memory allocation failed\n" );
 	exit (EXIT_FAILURE);
@@ -82,7 +82,7 @@ free (|POINTER|);
 |POINTER|	= NULL;
 
 == Idioms.realloc == map:ire, shortcut:r  ==
-|?POINTER|	= realloc ( |POINTER|, sizeof(<CURSOR><+TYPE+>) );
+<CURSOR>|?POINTER|	= (<+cast+>) realloc ( |POINTER|, sizeof(<+TYPE+>) <+count+> );
 if ( |POINTER|==NULL ) {
 	fprintf ( stderr, "\ndynamic memory reallocation failed\n" );
 	exit (EXIT_FAILURE);
