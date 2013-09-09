@@ -1,28 +1,43 @@
 == Idioms.function-declaration == map:ifd, shortcut:d  ==
-/* 
- * ===  FUNCTION  ======================================================================
- *         Name:  |?FUNCTION_NAME|
- *  Description:  <CURSOR>
- * =====================================================================================
+/**
+ *  @brief         <+description+>
+ *
+ *  @param[in]     <+param_in+>
+ *  @param[out]    <+param_out+>
+ *  @param[in,out] <+param_inout+>
+ *
+ *  @return        <+return_desc+>
+ *
+ *  @details       <+details+>
  */
 <+return_type+> |FUNCTION_NAME| ( <+argument_list+> ) ;
 == Idioms.function == map:if, shortcut:f  ==
-/* 
- * ===  FUNCTION  ======================================================================
- *         Name:  |?FUNCTION_NAME|
- *  Description:  <CURSOR>
- * =====================================================================================
+/**
+ *  @brief         <+description+>
+ *
+ *  @param[in]     <+param_in+>
+ *  @param[out]    <+param_out+>
+ *  @param[in,out] <+param_inout+>
+ *
+ *  @return        <+return_desc+>
+ *
+ *  @details       <+details+>
  */
 <+return_type+> |FUNCTION_NAME| ( <+argument_list+> )
 {
 <SPLIT>	return <+return_value+>;
 }		/* -----  end of function |FUNCTION_NAME|  ----- */
 == Idioms.function-static == map:isf, shortcut:t  ==
-/* 
- * ===  FUNCTION  ======================================================================
- *         Name:  |?FUNCTION_NAME|
- *  Description:  <CURSOR>
- * =====================================================================================
+/**
+ *  @brief         <+description+>
+ *
+ *  @param[in]     <+param_in+>
+ *  @param[out]    <+param_out+>
+ *  @param[in,out] <+param_inout+>
+ *
+ *  @return        <+return_desc+>
+ *
+ *  @details       <+details+>
  */
 static <+return_type+> |FUNCTION_NAME| ( <+argument_list+> )
 {
@@ -31,11 +46,15 @@ static <+return_type+> |FUNCTION_NAME| ( <+argument_list+> )
 == Idioms.main == map:im, shortcut:m  ==
 #include	<stdlib.h>
 
-/* 
- * ===  FUNCTION  ======================================================================
- *         Name:  main
- *  Description:  
- * =====================================================================================
+/**
+ *  @brief         <+description+>
+ *
+ *  @param[in]     argc The arguments count
+ *  @param[in]     argv The program arguments
+ *
+ *  @return        the exit code
+ *
+ *  @details       <+details+>
  */
 int main ( int argc, char *argv[] )
 {
@@ -43,16 +62,25 @@ int main ( int argc, char *argv[] )
 <SPLIT>	return EXIT_SUCCESS;
 }				/* ----------  end of function main  ---------- */
 == Idioms.enum == map:ie, shortcut:e  ==
+/**
+ * @brief: <+description+>
+*/
 enum |?ENUM_NAME| {<CURSOR>
 <SPLIT>};				/* ----------  end of enum |ENUM_NAME|  ---------- */
 
 typedef enum |ENUM_NAME| |ENUM_NAME:c|;
 == Idioms.struct == map:is, shortcut:s  ==
+/**
+ * @brief: <+description+>
+*/
 struct |?STRUCT_NAME| {<CURSOR>
 <SPLIT>};				/* ----------  end of struct |STRUCT_NAME|  ---------- */
 
 typedef struct |STRUCT_NAME| |STRUCT_NAME:c|;
 == Idioms.union == map:iu, shortcut:u  ==
+/**
+ * @brief: <+description+>
+*/
 union |?UNION_NAME| {<CURSOR>
 <SPLIT>};				/* ----------  end of union |UNION_NAME|  ---------- */
 

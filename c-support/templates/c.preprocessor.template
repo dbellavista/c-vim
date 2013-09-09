@@ -48,10 +48,10 @@
 <+c_body+>
 §-------------------------------------------------------------------------
 == Preprocessor.define == map:pd, shortcut:d, insert ==
-#define	<CURSOR>			/* <+define_comment+> */
+#define	<CURSOR>			/// <+define_comment+>
 §-------------------------------------------------------------------------
 == Preprocessor.undefine == map:pu, shortcut:u, insert ==
-#undef	<CURSOR>			/* <+define_comment+>  */
+#undef	<CURSOR>			/// <+define_comment+>
 §-------------------------------------------------------------------------
 == Preprocessor.if-endif == map:pif, shortcut:i ==
 #if  |?CONDITION:u|

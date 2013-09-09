@@ -1,15 +1,20 @@
 == Comments.end-of-line-comment == append, nomenu ==
 /* <CURSOR> */
 == Comments.frame == map:cfr, shortcut:f  ==
-/*-----------------------------------------------------------------------------
- *  <CURSOR>
- *-----------------------------------------------------------------------------*/
+/**
+ * @brief <CURSOR>
+ */
 == Comments.function == map:cfu, shortcut:f  ==
-/* 
- * ===  FUNCTION  ======================================================================
- *         Name:  |?FUNCTION_NAME|
- *  Description:  <CURSOR>
- * =====================================================================================
+/**
+ *  @brief         <+description+>
+ *
+ *  @param[in]     <+param_in+>
+ *  @param[out]    <+param_out+>
+ *  @param[in,out] <+param_inout+>
+ *
+ *  @return        <+return_desc+>
+ *
+ *  @details       <+details+>
  */
 == Comments.method == map:cme, shortcut:m  ==
 /*
@@ -27,41 +32,27 @@
  * =====================================================================================
  */
 == Comments.file description impl == map:cfdi, shortcut:c, start, noindent ==
-/*
- * =====================================================================================
+/**
  *
- *       Filename:  |FILENAME|
+ * @file    |FILENAME|
+ * @author  |AUTHOR| (|EMAIL|)
+ * @date    |DATE| |TIME|
+ * @brief   <+brief+>
  *
- *    Description:  <+description+>
+ * @details <+description+>
  *
- *        Version:  1.0
- *        Created:  |DATE| |TIME|
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  |AUTHOR| (|AUTHORREF|), |EMAIL|
- *   Organization:  |ORGANIZATION|
- *
- * =====================================================================================
  */
 
 == Comments.file description header == map:cfdh, shortcut:h, start, noindent ==
-/*
- * =====================================================================================
+/**
  *
- *       Filename:  |FILENAME|
+ * @file    |FILENAME|
+ * @author  |AUTHOR| (|EMAIL|)
+ * @date    |DATE| |TIME|
+ * @brief   <+brief+>
  *
- *    Description:  <+description+>
+ * @details <+description+>
  *
- *        Version:  1.0
- *        Created:  |DATE| |TIME|
- *       Revision:  none
- *       Compiler:  gcc
- *
- *         Author:  |AUTHOR| (|AUTHORREF|), |EMAIL|
- *   Organization:  |ORGANIZATION|
- *
- * =====================================================================================
  */
 == ENDTEMPLATE ==
 
