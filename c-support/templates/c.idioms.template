@@ -1,45 +1,45 @@
 == Idioms.function-declaration == map:ifd, shortcut:d  ==
-/**
- *  @brief         <+description+>
+/**<CURSOR>
+ *  @brief          <+description+>
  *
- *  @param[in]     <+param_in+>
- *  @param[out]    <+param_out+>
- *  @param[in,out] <+param_inout+>
+ *  @param[in]      <+param_in+>
+ *  @param[out]     <+param_out+>
+ *  @param[in,out]  <+param_inout+>
  *
- *  @return        <+return_desc+>
+ *  @return         <+return_desc+>
  *
- *  @details       <+details+>
+ *  @details        <+details+>
  */
-<+return_type+> |FUNCTION_NAME| ( <+argument_list+> ) ;
+<+return_type+> |?FUNCTION_NAME|(<+argument_list+>);
 == Idioms.function == map:if, shortcut:f  ==
-/**
- *  @brief         <+description+>
+/**<CURSOR>
+ *  @brief          <+description+>
  *
- *  @param[in]     <+param_in+>
- *  @param[out]    <+param_out+>
- *  @param[in,out] <+param_inout+>
+ *  @param[in]      <+param_in+>
+ *  @param[out]     <+param_out+>
+ *  @param[in,out]  <+param_inout+>
  *
- *  @return        <+return_desc+>
+ *  @return         <+return_desc+>
  *
- *  @details       <+details+>
+ *  @details        <+details+>
  */
-<+return_type+> |FUNCTION_NAME| ( <+argument_list+> )
+<+return_type+> |?FUNCTION_NAME|(<+argument_list+>)
 {
 <SPLIT>	return <+return_value+>;
 }		/* -----  end of function |FUNCTION_NAME|  ----- */
 == Idioms.function-static == map:isf, shortcut:t  ==
-/**
- *  @brief         <+description+>
+/**<CURSOR>
+ *  @brief          <+description+>
  *
- *  @param[in]     <+param_in+>
- *  @param[out]    <+param_out+>
- *  @param[in,out] <+param_inout+>
+ *  @param[in]      <+param_in+>
+ *  @param[out]     <+param_out+>
+ *  @param[in,out]  <+param_inout+>
  *
- *  @return        <+return_desc+>
+ *  @return         <+return_desc+>
  *
- *  @details       <+details+>
+ *  @details        <+details+>
  */
-static <+return_type+> |FUNCTION_NAME| ( <+argument_list+> )
+static <+return_type+> |?FUNCTION_NAME|(<+argument_list+>)
 {
 <SPLIT>	return <+return_value+>;
 }		/* -----  end of static function |FUNCTION_NAME|  ----- */
@@ -47,39 +47,43 @@ static <+return_type+> |FUNCTION_NAME| ( <+argument_list+> )
 #include	<stdlib.h>
 
 /**
- *  @brief         <+description+>
+ *  @brief          <+description+>
  *
- *  @param[in]     argc The arguments count
- *  @param[in]     argv The program arguments
+ *  @param[in]      argc The arguments count
+ *  @param[in]      argv The program arguments
  *
- *  @return        the exit code
+ *  @return         the exit code
  *
- *  @details       <+details+>
+ *  @details        <+details+>
  */
-int main ( int argc, char *argv[] )
+int main(int argc, char *argv[])
 {
 <CURSOR>
 <SPLIT>	return EXIT_SUCCESS;
 }				/* ----------  end of function main  ---------- */
 == Idioms.enum == map:ie, shortcut:e  ==
-/**
- * @brief: <+description+>
+/**<CURSOR>
+ * @brief <+description+>
 */
-enum |?ENUM_NAME| {<CURSOR>
+enum |?ENUM_NAME| {
+  ///
+  <+enum_field+>
 <SPLIT>};				/* ----------  end of enum |ENUM_NAME|  ---------- */
 
 typedef enum |ENUM_NAME| |ENUM_NAME:c|;
 == Idioms.struct == map:is, shortcut:s  ==
-/**
- * @brief: <+description+>
+/**<CURSOR>
+ * @brief <+description+>
 */
-struct |?STRUCT_NAME| {<CURSOR>
+struct |?STRUCT_NAME| {
+  ///
+  <+struct_field+>
 <SPLIT>};				/* ----------  end of struct |STRUCT_NAME|  ---------- */
 
 typedef struct |STRUCT_NAME| |STRUCT_NAME:c|;
 == Idioms.union == map:iu, shortcut:u  ==
-/**
- * @brief: <+description+>
+/**<CURSOR>
+ * @brief <+description+>
 */
 union |?UNION_NAME| {<CURSOR>
 <SPLIT>};				/* ----------  end of union |UNION_NAME|  ---------- */

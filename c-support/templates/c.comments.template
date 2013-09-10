@@ -6,15 +6,15 @@
  */
 == Comments.function == map:cfu, shortcut:f  ==
 /**
- *  @brief         <+description+>
+ *  @brief          <+description+>
  *
- *  @param[in]     <+param_in+>
- *  @param[out]    <+param_out+>
- *  @param[in,out] <+param_inout+>
+ *  @param[in]      <+param_in+>
+ *  @param[out]     <+param_out+>
+ *  @param[in,out]  <+param_inout+>
  *
- *  @return        <+return_desc+>
+ *  @return         <+return_desc+>
  *
- *  @details       <+details+>
+ *  @details        <+details+>
  */
 == Comments.method == map:cme, shortcut:m  ==
 /*
