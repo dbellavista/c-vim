@@ -58,7 +58,7 @@ static <+return_type+> |?FUNCTION_NAME|(<+argument_list+>)
  */
 int main(int argc, char *argv[])
 {
-<CURSOR>
+<+main_body+>
 <SPLIT>	return EXIT_SUCCESS;
 }				/* ----------  end of function main  ---------- */
 == Idioms.enum == map:ie, shortcut:e  ==
