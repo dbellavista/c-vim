@@ -2631,54 +2631,34 @@ function! s:CreateAdditionalMaps ()
 	" ---------- run menu --------------------------------------------------------
 	"
 	map  <buffer>  <silent>  <LocalLeader>rc         :call C_Compile()<CR>:call C_HlMessage()<CR>
-	imap <buffer>  <silent>  <LocalLeader>rc    <C-C>:call C_Compile()<CR>:call C_HlMessage()<CR>
 	map  <buffer>  <silent>  <LocalLeader>rl         :call C_Link()<CR>:call C_HlMessage()<CR>
-	imap <buffer>  <silent>  <LocalLeader>rl    <C-C>:call C_Link()<CR>:call C_HlMessage()<CR>
 	map  <buffer>  <silent>  <LocalLeader>rr         :call C_Run()<CR>
-	imap <buffer>  <silent>  <LocalLeader>rr    <C-C>:call C_Run()<CR>
 	map  <buffer>  <silent>  <LocalLeader>ra         :call C_Arguments()<CR>
-	imap <buffer>  <silent>  <LocalLeader>ra    <C-C>:call C_Arguments()<CR>
 	map  <buffer>  <silent>  <LocalLeader>rm         :call C_Make()<CR>
-	imap <buffer>  <silent>  <LocalLeader>rm    <C-C>:call C_Make()<CR>
 	map  <buffer>  <silent>  <LocalLeader>rcm        :call C_ChooseMakefile()<CR>
-	imap <buffer>  <silent>  <LocalLeader>rcm   <C-C>:call C_ChooseMakefile()<CR>
 	map  <buffer>  <silent>  <LocalLeader>rmc        :call C_MakeClean()<CR>
-	imap <buffer>  <silent>  <LocalLeader>rmc   <C-C>:call C_MakeClean()<CR>
 	map  <buffer>  <silent>  <LocalLeader>rme        :call C_ExeToRun()<CR>
-	imap <buffer>  <silent>  <LocalLeader>rme   <C-C>:call C_ExeToRun()<CR>
 	map  <buffer>  <silent>  <LocalLeader>rma        :call C_MakeArguments()<CR>
-	imap <buffer>  <silent>  <LocalLeader>rma   <C-C>:call C_MakeArguments()<CR>
 	map  <buffer>  <silent>  <LocalLeader>rp         :call C_SplintCheck()<CR>:call C_HlMessage()<CR>
-	imap <buffer>  <silent>  <LocalLeader>rp    <C-C>:call C_SplintCheck()<CR>:call C_HlMessage()<CR>
 	map  <buffer>  <silent>  <LocalLeader>rpa        :call C_SplintArguments()<CR>
-	imap <buffer>  <silent>  <LocalLeader>rpa   <C-C>:call C_SplintArguments()<CR>
 	map  <buffer>  <silent>  <LocalLeader>rcc        :call C_CppcheckCheck()<CR>:call C_HlMessage()<CR>
-	imap <buffer>  <silent>  <LocalLeader>rcc   <C-C>:call C_CppcheckCheck()<CR>:call C_HlMessage()<CR>
 	map  <buffer>  <silent>  <LocalLeader>rccs       :call C_CppcheckSeverityInput()<CR>
-	imap <buffer>  <silent>  <LocalLeader>rccs  <C-C>:call C_CppcheckSeverityInput()<CR>
 
 	map  <buffer>  <silent>  <LocalLeader>ri         :call C_Indent()<CR>
-	imap <buffer>  <silent>  <LocalLeader>ri    <C-C>:call C_Indent()<CR>
 	map  <buffer>  <silent>  <LocalLeader>rh         :call C_Hardcopy()<CR>
-	imap <buffer>  <silent>  <LocalLeader>rh    <C-C>:call C_Hardcopy()<CR>
 	vmap <buffer>  <silent>  <LocalLeader>rh         :call C_Hardcopy()<CR>
 	map  <buffer>  <silent>  <LocalLeader>rs         :call C_Settings()<CR>
-	imap <buffer>  <silent>  <LocalLeader>rs    <C-C>:call C_Settings()<CR>
 	"
 	if has("unix")
 		map  <buffer>  <silent>  <LocalLeader>rx       :call C_XtermSize()<CR>
-		imap <buffer>  <silent>  <LocalLeader>rx  <C-C>:call C_XtermSize()<CR>
 	endif
 	map  <buffer>  <silent>  <LocalLeader>ro         :call C_Toggle_Gvim_Xterm()<CR>
-	imap <buffer>  <silent>  <LocalLeader>ro    <C-C>:call C_Toggle_Gvim_Xterm()<CR>
 	"
 	" Abraxas CodeCheck (R)
 	"
 	if s:C_CodeCheckIsExecutable==1
 		map  <buffer>  <silent>  <LocalLeader>rk       :call C_CodeCheck()<CR>:call C_HlMessage()<CR>
-		imap <buffer>  <silent>  <LocalLeader>rk  <C-C>:call C_CodeCheck()<CR>:call C_HlMessage()<CR>
 		map  <buffer>  <silent>  <LocalLeader>rka      :call C_CodeCheckArguments()<CR>
-		imap <buffer>  <silent>  <LocalLeader>rka <C-C>:call C_CodeCheckArguments()<CR>
 	endif
 	" ---------- plugin help -----------------------------------------------------
 	"
