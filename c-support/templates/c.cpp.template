@@ -152,17 +152,18 @@ ios::|PICK|<CURSOR>
 == ENDTEMPLATE ==
 
 == C++.class == map:+c, shortcut:c ==
-/*
- * =====================================================================================
- *        Class:  |?CLASSNAME:c|
- *  Description:  <CURSOR>
- * =====================================================================================
+/**
+ *  @brief  <+brief+>
+ *
+ *  @description <+description+>
+ *
  */
 class |CLASSNAME|
 {
 	public:
 		/* ====================  LIFECYCLE     ======================================= */
 		|CLASSNAME| ();                             /* constructor */
+		~|CLASSNAME| ();                            /* desctructor */
 
 		/* ====================  ACCESSORS     ======================================= */
 
