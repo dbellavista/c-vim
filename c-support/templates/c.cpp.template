@@ -153,17 +153,22 @@ ios::|PICK|<CURSOR>
 
 == C++.class == map:+c, shortcut:c ==
 /**
- *  @brief  <+brief+>
+ * @class    |CLASSNAME|
+ * @ingroup  <+group+>
+ * @author   |AUTHOR| (|EMAIL|)
+ * @date    |DATE| |TIME|
  *
- *  @description <+description+>
+ * @brief   <+brief+>
+ *
+ * @details <+description+>
  *
  */
-class |CLASSNAME|
+class |?CLASSNAME|
 {
 	public:
 		/* ====================  LIFECYCLE     ======================================= */
-		|CLASSNAME| ();                             /* constructor */
-		~|CLASSNAME| ();                            /* desctructor */
+		|CLASSNAME|();                             /* constructor */
+		~|CLASSNAME|();                            /* desctructor */
 
 		/* ====================  ACCESSORS     ======================================= */
 
@@ -184,19 +189,24 @@ class |CLASSNAME|
 }; /* -----  end of class |CLASSNAME|  ----- */
 
 == C++.class using new == map:+cn, shortcut:n ==
-/*
- * =====================================================================================
- *        Class:  |?CLASSNAME:c|
- *  Description:  <CURSOR>
- * =====================================================================================
+/**
+ * @class    |CLASSNAME|
+ * @ingroup  <+group+>
+ * @author   |AUTHOR| (|EMAIL|)
+ * @date    |DATE| |TIME|
+ *
+ * @brief   <+brief+>
+ *
+ * @details <+description+>
+ *
  */
-class |CLASSNAME|
+class |?CLASSNAME|
 {
   public:
     /* ====================  LIFECYCLE     ======================================= */
-    |CLASSNAME| ();                             /* constructor      */
-    |CLASSNAME| ( const |CLASSNAME| &other );   /* copy constructor */
-    ~|CLASSNAME| ();                            /* destructor       */
+    |CLASSNAME|();                             /* constructor      */
+    |CLASSNAME|( const |CLASSNAME| &other );   /* copy constructor */
+    ~|CLASSNAME|();                            /* destructor       */
 
 		/* ====================  ACCESSORS     ======================================= */
 
@@ -219,18 +229,22 @@ class |CLASSNAME|
 }; /* -----  end of class |CLASSNAME|  ----- */
 
 == C++.template class == map:+tc, shortcut:t ==
-/*
- * =====================================================================================
- *        Class:  |?CLASSNAME:c|
- *  Description:  <CURSOR>
- * =====================================================================================
+/**
+ * @class    |?CLASSNAME|
+ * @ingroup  <+group+>
+ * @author   |AUTHOR| (|EMAIL|)
+ * @date    |DATE| |TIME|
+ *
+ * @brief   <+brief+>
+ *
+ * @details <+description+>
+ *
  */
-template < class T >
-class |CLASSNAME|
+template < class T > class |CLASSNAME|
 {
   public:
     /* ====================  LIFECYCLE     ======================================= */
-    |CLASSNAME| ();                             /* constructor */
+    |CLASSNAME|();                             /* constructor */
 
 		/* ====================  ACCESSORS     ======================================= */
 

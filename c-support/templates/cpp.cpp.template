@@ -152,10 +152,10 @@ ios::|PICK|<CURSOR>
 == ENDTEMPLATE ==
 
 == C++.class == map:+c, shortcut:c ==
-// =====================================================================================
-//        Class:  |?CLASSNAME:c|
-//  Description:  <CURSOR>
-// =====================================================================================
+/**
+ *        Class:  |?CLASSNAME:c|
+ *  Description:  <+description+>
+ */
 class |CLASSNAME|
 {
 	public:
@@ -181,10 +181,10 @@ class |CLASSNAME|
 }; // -----  end of class |CLASSNAME|  ----- 
 
 == C++.class using new == map:+cn, shortcut:n ==
-// =====================================================================================
-//        Class:  |?CLASSNAME:c|
-//  Description:  <CURSOR>
-// =====================================================================================
+/**
+ *        class:  |?classname:c|
+ *  description:  <+description+>
+ */
 class |CLASSNAME|
 {
   public:
@@ -214,13 +214,11 @@ class |CLASSNAME|
 }; // -----  end of class |CLASSNAME|  ----- 
 
 == C++.template class == map:+tc, shortcut:t ==
-// =====================================================================================
-//        Class:  |?CLASSNAME:c|
-//  Description:  <CURSOR>
-// =====================================================================================
+/**
+ *        class:  |?classname:c|
+ *  description:  <+description+>
  */
-template < class T >
-class |CLASSNAME|
+template < class T > class |CLASSNAME|
 {
   public:
     // ====================  LIFECYCLE     ======================================= 
@@ -245,13 +243,11 @@ class |CLASSNAME|
 }; // ----------  end of template class |CLASSNAME|  ---------- 
 
 == C++.template class using new == map:+tcn, shortcut:n ==
-// =====================================================================================
-//        Class:  |?CLASSNAME:c|
-//  Description:  <CURSOR>
-// =====================================================================================
-
-template < class T >
-class |CLASSNAME|
+/**
+ *        class:  |?classname:c|
+ *  description:  <+description+>
+ */
+template < class T > class |CLASSNAME|
 {
   public:
     // ====================  LIFECYCLE     =======================================
@@ -280,10 +276,10 @@ class |CLASSNAME|
 }; // -----  end of template class |CLASSNAME|  ----- 
 
 == C++.error class == map:+ec, shortcut:e ==
-// =====================================================================================
-//        Class:  |?CLASSNAME:c|
-//  Description:  <CURSOR>
-// =====================================================================================
+/**
+ *        class:  |?classname:c|
+ *  description:  <+description+>
+ */
 class |CLASSNAME|
 {
   public:     |CLASSNAME| ( string msg = "|CLASSNAME|" ):message(msg)  { }
@@ -293,23 +289,25 @@ class |CLASSNAME|
 }; // -----  end of class |CLASSNAME|  ----- 
 
 == C++.IMPLEMENTATION.class == map:+ic , shortcut:c ==
-//--------------------------------------------------------------------------------------
-//       Class:  |?CLASSNAME:c|
-//      Method:  |CLASSNAME|
-// Description:  constructor
-//--------------------------------------------------------------------------------------
+/**
+ *       Class:  |?CLASSNAME:c|
+ *      Method:  |CLASSNAME|
+ * Description:  constructor
+ */
 |CLASSNAME|::|CLASSNAME| ()
-{<CURSOR>
+{
+  <+body+>
 }  // -----  end of method |CLASSNAME|::|CLASSNAME|  (constructor)  ----- 
 
 == C++.IMPLEMENTATION.class using new == map:+icn , shortcut:n ==
-//--------------------------------------------------------------------------------------
-//       Class:  |?CLASSNAME:c|
-//      Method:  |CLASSNAME|
-// Description:  constructor
-//--------------------------------------------------------------------------------------
+/**
+ *       Class:  |?CLASSNAME:c|
+ *      Method:  |CLASSNAME|
+ * Description:  constructor
+ */
 |CLASSNAME|::|CLASSNAME| ()
-{<CURSOR>
+{
+  <+body+>
 }  // -----  end of method |CLASSNAME|::|CLASSNAME|  (constructor)  ----- 
 
 //--------------------------------------------------------------------------------------
